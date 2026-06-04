@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Dynamic Profile Card</title>
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        padding: 20px;
+      }
+
+      #profileCard {
+        width: 300px;
+        margin: auto;
+        padding: 20px;
+        border: 2px solid #ccc;
+        border-radius: 10px;
+      }
+
+      #profileImage {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+      }
+
+      .active-status {
+        background-color: lightgreen;
+      }
+
+      button {
+        margin: 5px;
+        padding: 10px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="profileCard">
+      <img
+        id="profileImage"
+        src="https://www.image2url.com/r2/default/images/1780443566595-e1d1948a-4f05-4c50-a17f-bea9c1f06bf4.png"
+        alt="Profile Image"
+      />
+
+      <h2 id="profileName">Angela Beukes</h2>
+
+      <p id="profileRole">Software Developer</p>
+
+      <p id="profileBio">
+        Passionate about coding and learning new technologies.
+      </p>
+
+      <button id="updateNameBtn">Update Name</button>
+      <button id="updateRoleBtn">Update Role</button>
+      <button id="toggleStatusBtn">Toggle Active Status</button>
+      <button id="changeImageBtn">Change Image</button>
+    </div>
+
+    <script src="week8_ex02_dom_profile_card.js"></script>
+  </body>
+</html>
